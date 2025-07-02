@@ -9,10 +9,10 @@ interface GameCellProps {
   value: Player | null;
   onClick: () => void;
   isClickable: boolean;
-  index: number;
+  // index: number;
 }
 
-export default function GameCell({ value, onClick, isClickable, index }: GameCellProps) {
+export default function GameCell({ value, onClick, isClickable }: GameCellProps) {
   const getCellContent = () => {
     if (!value) return '';
     return value;
