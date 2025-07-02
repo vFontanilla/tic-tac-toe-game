@@ -24,7 +24,6 @@ export default function GameBoard({ board, onCellClick, isGameActive, winner }: 
             value={cell}
             onClick={() => onCellClick(index)}
             isClickable={isGameActive && !cell}
-            index={index}
           />
         ))}
       </div>
